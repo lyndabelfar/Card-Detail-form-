@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Mukta&family=Open+Sans:ital,wght@1,300&family=Outfit:wght@200&family=PT+Sans+Caption&family=Roboto:wght@300;400&family=Source+Serif+Pro&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family:  'DM Sans', sans-serif;
+  
+  
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+}
+
+
+.left{
+  background: url('./images/bg-main-desktop.png') no-repeat;
+  width: 38%;
+  height: 657px;
+  object-fit: cover;
+
+}
+.main-card{
+  background: url('./images/bg-card-front.png') no-repeat;
+  object-fit: cover;
+  width: auto;
+  height: 38%;
+  transform: translate(30%, 25%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+      
+}
+
+.logo{
+  background: url('./images/card-logo.svg') no-repeat;
+  object-fit: cover;
+  width: auto;
+  height: 60px;
+}
+
+.right{
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-left: 150px;
+}
+
+.confirm-btn{
+  color: white;
+  background: hsl(278, 68%, 11%);
+  border: 1px solid hsl(278, 68%, 11%);
+  padding: 8px ;
+  font-size: 1.25rem;
+  width: 80%;
+  border-radius: 8px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.card-num{
+  color: white;
+  font-size: 2.1rem;
+  text-transform: uppercase;
+  padding: 10px;
+  letter-spacing: 3px;
+}
+.person-name{
+  color: white;
+  text-transform: uppercase;
+  padding: 10px;
+  font-size: 1.4rem;
+
+}
+
+.more-data{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 10px;
+}
+.date{
+  color: white;
+  font-size: 1.2rem;
+}
+
+.bottom-data{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.back-card{
+  background: url('./images/bg-card-back.png') no-repeat;
+  width: auto;
+  height: 250px;
+  object-fit: cover;
+  margin-top: 80px;
+  margin-left: 70px;
+}
+
+
+.cvc{
+  transform: translate(80%, 400%);
+  font-size: 1.3rem;
+  color: gray;
+}
+
+input{
+  border: 1px solid rgba(128, 128, 128, 0.5);
+  font-size: 1.25rem;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.card-number-input,.name-input{
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+label{
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: rgb(31, 31, 31);
+}
+
+.cvc-input{
+  margin-left: 15px;
+  width: 32%;
+}
+
+.month-input, .day-input{
+  width: 20%;
+  margin-right: 10px;
+}
+
+.input-danger{
+  border: 1px solid green !important;
+}
